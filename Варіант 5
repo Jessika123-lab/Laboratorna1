@@ -1,0 +1,14 @@
+A = [[1, 5, 3, -4, 5],
+     [3, 1, -2, 0, 2],
+     [5, -7, 0, 10, 8],
+     [0, 3, 1, 1, -2]]
+b = [10, 5, -9, 12]
+
+
+Ab = [A[i] + [b[i]] for i in range(len(A))]
+
+
+x = gaussian_elimination(A, b)
+
+
+print(x)
